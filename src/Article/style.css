@@ -1,0 +1,29 @@
+:local(.koArticle) {
+  line-height: 1.4rem;
+}
+
+:local(.koArticle h1) {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 2.8rem;
+  margin-bottom: 1.4rem;
+  text-transform: uppercase;
+}
+
+:local(.koArticle h2) {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2.8rem;
+  margin-bottom: 1.4rem;
+}
+
+:local(.koArticle h3) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+:local(.koArticle p) {
+  margin-bottom: 1.4rem;
+}

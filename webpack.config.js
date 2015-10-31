@@ -2,6 +2,10 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
+// PostCSS Plugins
+const autoprefixer = require('autoprefixer');
+const mixins = require('postcss-mixins');
+
 module.exports = [{
   context: __dirname,
 
@@ -17,7 +21,7 @@ module.exports = [{
       // Get that css
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?localIdentName=[local]')
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader')
       },
       // so modern man
       { test: /\.js$/, exclude: /(node_modules|bower_components)/, loader: 'babel?stage=0', include: [/node_modules\/hudl-.*/, path.resolve(__dirname + '/')] }
@@ -26,6 +30,11 @@ module.exports = [{
       { test: /\.(js|jsx)$/, loader: 'eslint-loader', exclude: /node_modules/ }
     ],
   },
+
+  postcss: [
+    autoprefixer({ browsers: ['last 2 versions'] }),
+    mixins
+  ],
 
   plugins: [
     new ExtractTextPlugin('[name].css'),
@@ -47,7 +56,7 @@ module.exports = [{
       // Get that css
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?localIdentName=[local]')
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader')
       },
       // so modern man
       { test: /\.js$/, exclude: /(node_modules|bower_components)/, loader: 'babel?stage=0' }
@@ -56,9 +65,14 @@ module.exports = [{
 
   resolve: {
     alias: {
-      'hudl-video-playback': path.resolve('./vendor/videoplayback-override'),
+      'kickoff': path.resolve('./lib/kickoff'),
     },
   },
+
+  postcss: [
+    autoprefixer({ browsers: ['last 2 versions'] }),
+    mixins
+  ],
 
   plugins: [
     new ExtractTextPlugin('[name].css'),

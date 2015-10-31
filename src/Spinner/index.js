@@ -3,6 +3,6 @@ import style from './style.css';
 
 export default function Spinner(/* props, context */) : React.DOM {
   return (
-    <div className={style.koSpinner} />
+    <div className={style.spinner} />
   );
 }

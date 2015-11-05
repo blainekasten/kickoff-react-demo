@@ -8,7 +8,7 @@ Built into webpack's `css-loader`, [CSS Modules](https://github.com/css-modules/
 
 ### Composition
 
-CSS Module's [composition](https://github.com/css-modules/css-modules#composition) is essentially a stand-in for Sass-style placeholders. Instead of:
+CSS Module's [composition](https://github.com/css-modules/css-modules#composition) is an alternative to Sass-style placeholders. Instead of:
 
     @extend %trade-type;
 

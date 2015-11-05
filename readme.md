@@ -74,3 +74,5 @@ Easily configurable, as we just set the target browsers in webpack:
 Here are some others we might consider:
 
 - [postcss-initial](https://github.com/maximkoretskiy/postcss-initial), a shim for CSS4's `initial` keyword (which basically stops inheritance on a property and resets it to its default value)
+- [postcss-custom-media](https://github.com/postcss/postcss-custom-media) supports CSS4 syntax for custom media queries
+- [postcss-custom-selectors](https://github.com/postcss/postcss-custom-selectors) supports the custom selectors [draft CSS extension](https://drafts.csswg.org/css-extensions/#custom-selectors)

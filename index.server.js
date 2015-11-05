@@ -1,9 +1,9 @@
 import React from 'react';
-import Spinner from './src/Spinner';
-import Article from './src/Article';
-import Button from './src/Button';
-import Wrap from './src/Wrap';
-import './src/reset.css';
+import './lib/kickoff/kickoff-base.css';
+import Spinner from './lib/kickoff/components/Spinner';
+import Article from './lib/kickoff/components/Article';
+import Button from './lib/kickoff/components/Button';
+import Wrap from './lib/kickoff/components/Wrap';
 
 export default (
   <Wrap>

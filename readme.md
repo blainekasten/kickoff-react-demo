@@ -34,7 +34,19 @@ and Autoprefixer converts to:
 
 Easily configurable, as we just set the target browsers in webpack:
 
-    autoprefixer({ browsers: ['last 2 versions'] })
+    autoprefixer({ browsers: ['last 2 versions', 'IE 9'] })
+
+### PostCSS-Custom-Properties
+
+[postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) provides CSS variable functionality using the syntax of the [CSS4 spec](http://www.w3.org/TR/css-variables/):
+
+    :root {
+        --dark-gray: #222;
+    }
+
+    .my-element {
+        color: var(--dark-gray);
+    }
 
 ### PostCSS-Mixins
 
@@ -51,11 +63,14 @@ Easily configurable, as we just set the target browsers in webpack:
         background: url(twt.png);
     }
 
-## TBD
+### PostCss-Color-Function
 
-A list of functionalities for which we'll have multiple options, and will require further research.
+[postcss-color-function](https://github.com/postcss/postcss-color-function) provides a host of color adjustment functionalities in line with the [CSS4 draft spec](https://drafts.csswg.org/css-color/#modifying-colors). This is how we replace Sass functions like `darken()` and `lighten()`.
 
-### Variables
+    background: color(#456 shade(5%));
 
-- [postcss-simple-vars](https://github.com/postcss/postcss-simple-vars) aims to be a stand-in for `$blue`-style Sass variables
-- [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties) aims to follow the CSS4 spec (`var(--blue)` syntax)
+### Future consideration
+
+Here are some others we might consider:
+
+- [postcss-initial](https://github.com/maximkoretskiy/postcss-initial), a shim for CSS4's `initial` keyword (which basically stops inheritance on a property and resets it to its default value)

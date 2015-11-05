@@ -1,0 +1,97 @@
+:root {
+    /* Dark UI Colors */
+    --ui-dark-color: #232A31;
+    --ui-dark-medium-color: #38434F;
+    --ui-dark-light-color: #4E5D6C;
+
+    /*  Gray UI Colors */
+    --ui-gray-color: #8A8A8A;
+    --ui-gray-medium-color: #E8E8E8;
+    --ui-gray-light-color: #F5F5F5;
+
+    /*  Accent UI Colors */
+    --ui-blue-color: #00AEEF;
+    --ui-orange-color: #FF6600;
+
+    /*  Alert UI Colors */
+    --ui-red-color: #D81D1D;
+    --ui-yellow-color: #FABE39;
+    --ui-green-color: #6AA220;
+
+    /*  Grayscale UI Text Colors */
+    --ui-text-dark-color: #333333;
+    --ui-text-medium-color: #666666;
+    --ui-text-light-color: #999999;
+    --ui-text-extra-light-color: #CCCCCC;
+
+    /*  Base UI Colors */
+    --ui-white-color: #FFFFFF;
+    --ui-black-color: #000000;
+
+    /*  Primary Team Colors */
+    --team-default-color: #232A31;
+    --team-light-gray-color: #E9E9E9;
+    --team-yellow-color: #FFDD00;
+    --team-gold-color: #C5B358;
+    --team-orange-color: #F87620;
+    --team-light-red-color: #F30000;
+    --team-red-color: #C20000;
+    --team-maroon-color: #7A1700;
+    --team-black-color: #171919;
+    --team-light-blue-color: #68B2D8;
+    --team-blue-color: #1652AE;
+    --team-dark-blue-color: #0F2A4B;
+    --team-purple-color: #332064;
+    --team-green-color: #2B7834;
+    --team-dark-green-color: #1F4615;
+
+    /*  Tagging Team Colors */
+    --tagging-team-white-color: #E9E9E9;
+    --tagging-team-gray-color: #8C9196;
+    --tagging-team-black-color: #404040;
+    --tagging-team-yellow-color: #FFDD30;
+    --tagging-team-orange-color: #ED9827;
+    --tagging-team-red-color: #DF4953;
+    --tagging-team-green-color: #42BE39;
+    --tagging-team-blue-color: #3985BE;
+    --tagging-team-purple-color: #9F62B1;
+
+    /*  Font Sizes
+    /*  ***********************************/
+
+    --ko-font-size-small: .75rem;
+    --ko-font-size-p: 1rem;
+    --ko-font-size-5: 1.125rem;
+    --ko-font-size-h5: 1.125rem;
+    --ko-font-size-4: 1.3125rem;
+    --ko-font-size-h4: 1.3125rem;
+    --ko-font-size-3: 1.5rem;
+    --ko-font-size-h3: 1.5rem;
+    --ko-font-size-2: 2rem;
+    --ko-font-size-h2: 2rem;
+    --ko-font-size-1: 3rem;
+    --ko-font-size-h1: 3rem;
+
+    /*  Z-index
+    /*  ***********************************/
+
+    --z-1: 100;
+    --z-2: 200;
+    --z-3: 300;
+    --z-4: 400;
+    --z-5: 500;
+    --z-6: 600;
+    --z-7: 700;
+
+    /*  Transition Lengths
+    /*  ***********************************/
+
+    --t-quick: .2s;
+    --t-med: .3s;
+    --t-slow: .5s;
+
+    /*  Common Breakpoints
+    /*  ***********************************/
+
+    --b-showdesktop: 65;
+}

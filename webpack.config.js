@@ -3,8 +3,11 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 
 // PostCSS Plugins
+const atImport = require('postcss-import');
 const autoprefixer = require('autoprefixer');
+const colorFunc = require('postcss-color-function');
 const mixins = require('postcss-mixins');
+const props = require('postcss-custom-properties');
 
 module.exports = [{
   context: __dirname,
@@ -32,8 +35,11 @@ module.exports = [{
   },
 
   postcss: [
-    autoprefixer({ browsers: ['last 2 versions'] }),
-    mixins
+    atImport,
+    autoprefixer({ browsers: ['last 2 versions', 'IE 9'] }),
+    mixins,
+    props,
+    colorFunc
   ],
 
   plugins: [
@@ -63,15 +69,12 @@ module.exports = [{
     ],
   },
 
-  resolve: {
-    alias: {
-      'kickoff': path.resolve('./lib/kickoff'),
-    },
-  },
-
   postcss: [
-    autoprefixer({ browsers: ['last 2 versions'] }),
-    mixins
+    atImport,
+    autoprefixer({ browsers: ['last 2 versions', 'IE 9'] }),
+    mixins,
+    props,
+    colorFunc
   ],
 
   plugins: [

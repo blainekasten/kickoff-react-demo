@@ -1,9 +1,12 @@
+@import '../../utils/variables.css';
+
 .koWrap {
-  background-color: #FFF;
+  background-color: var(--ui-dark-light-color);
   z-index: 1;
   position: relative;
   display: flex;
   -moz-box-orient: vertical;
   flex-direction: column;
-  transition: all 0.3s ease 0s;
+  transition: all var(--t-med) ease 0s;
+  padding: 1rem;
 }

@@ -1,11 +1,12 @@
-.testClass {
-  color: red;
-}
+@import '../../utils/animations.css';
 
-.spinner {
-  composes: testClass;
+.spinner :local {
   display: flex;
-  animation: 0.75s linear 0s normal none infinite running spinner-rotation;
+  animation-name: spinner-rotation;
+  animation-duration: 0.75s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   clear: both;
   height: 4rem;
   width: 4rem;
@@ -18,26 +19,3 @@
   display: block;
 }
 
-@-webkit-keyframes spinner-rotation {
-  from {
-    -webkit-transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(359deg); } }
-@-moz-keyframes spinner-rotation {
-  from {
-    -moz-transform: rotate(0deg); }
-  to {
-    -moz-transform: rotate(359deg); } }
-@keyframes spinner-rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  to {
-    -webkit-transform: rotate(359deg);
-    -moz-transform: rotate(359deg);
-    -ms-transform: rotate(359deg);
-    -o-transform: rotate(359deg);
-    transform: rotate(359deg); } }

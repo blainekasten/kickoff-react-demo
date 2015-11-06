@@ -1,24 +1,30 @@
-.primary {
+@import '../../utils/variables.css';
+
+.ko-button {
   box-shadow: 0px 0.0625rem 0px 0px #E55B00;
   border-radius: 0.125rem;
-  border-color: #F26000;
   border-style: solid;
-  background-color: #F60;
-  background-image: linear-gradient(#F60, #F96300);
-  color: #FFF;
   font-weight: bold;
   font-family: trade;
-  font-size: 1rem;
+  font-size: var(--ko-font-size-p);
   padding: 0.75rem;
   border: 0.0625rem solid transparent;
   width: auto;
   vertical-align: top;
-  line-height: 1rem;
+  line-height: var(--ko-font-size-p);
   -moz-appearance: none;
   position: relative;
   cursor: pointer;
   text-decoration: none;
-  margin: 0px;
+  margin: 1rem;
   display: inline-block;
   margin-left: 0px;
+}
+
+.primary {
+  composes: ko-button;
+  border-color: var(--ui-orange-color);
+  background-color: #F60;
+  background-image: linear-gradient(#F60, var(--ui-orange-color));
+  color: #FFF;
 }

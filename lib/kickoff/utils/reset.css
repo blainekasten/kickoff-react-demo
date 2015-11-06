@@ -59,6 +59,7 @@ body {
     font-family: trade, sans-serif;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
+    background: #4E5D6C;
 }
 
 a {

@@ -1,4 +1,4 @@
-:local(.koWrap) {
+.koWrap {
   background-color: #FFF;
   z-index: 1;
   position: relative;

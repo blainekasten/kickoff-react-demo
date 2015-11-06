@@ -1,0 +1,19 @@
+/*@import './mixins.css';*/
+@import './variables.css';
+
+:global(.ko-link) {
+    font-weight: bold;
+    color: var(--ui-orange-color);
+    border-bottom: 1px solid var(--ui-gray-medium-color);
+    transition: all var(--t-quick);
+}
+
+:global(.ko-link:hover) {
+    color: color(var(--ui-orange-color) shade(5%));
+    border-color: var(--ui-orange-color);
+}
+
+:global(.ko-link:active),
+:global(.ko-link:focus) {
+    color: color(var(--ui-orange-color) tint(5%));
+}

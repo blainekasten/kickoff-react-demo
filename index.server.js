@@ -3,17 +3,26 @@ import './lib/kickoff/kickoff-base.css';
 import Spinner from './lib/kickoff/components/Spinner';
 import Article from './lib/kickoff/components/Article';
 import Button from './lib/kickoff/components/Button';
+import ButtonGroup from './lib/kickoff/components/ButtonGroup';
 import Wrap from './lib/kickoff/components/Wrap';
+import Input from './lib/kickoff/components/Form/Input';
 
 export default (
   <Wrap>
     <Spinner />
 
-    <Button
-      type="primary"
-      onClick={() => alert('clicked button')}
-      title="Click for alert"
-    />
+    <ButtonGroup>
+      <Button
+        type="primary"
+        onClick={() => alert('clicked button')}
+      >Click for alert</Button>
+
+      <Button
+        onClick={() => alert('shouldnt work')}
+        disabled
+      >disabled</Button>
+
+    </ButtonGroup>
 
     <Article>
       <h1>This is a big heading.</h1>
@@ -21,6 +30,8 @@ export default (
       <h2>This is a smaller heading.</h2>
       <p>Egestas conubia velit senectus eligendi tortor nobis qui nostrud itaque mollitia. Iure ex incididunt varius quas mauris! Minima rhoncus magni! <em>Minus sit mollis cras, pariatur tortor dicta accusamus temporibus mauris nibh molestie</em>, sapiente pretium luctus! Mattis magnis purus assumenda dictum quis interdum atque! Cupiditate. Adipisicing, quisquam sem lobortis porta. Inventore.</p>
     </Article>
+
+    <Input placeholder="Test Input" />
 
   </Wrap>
 );

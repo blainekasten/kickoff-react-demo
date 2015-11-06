@@ -1,0 +1,7 @@
+.buttonGroup > button:first-child {
+  margin-left: 0px;
+}
+
+.buttonGroup > button:first-child {
+  margin-left: 0.5rem;
+}

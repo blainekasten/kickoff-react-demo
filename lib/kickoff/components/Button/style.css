@@ -1,30 +1,51 @@
 @import '../../utils/variables.css';
 
+
 .ko-button {
-  box-shadow: 0px 0.0625rem 0px 0px #E55B00;
-  border-radius: 0.125rem;
-  border-style: solid;
+  color: #232A31;
+  background-color: transparent;
+  display: inline-block;
+  font-size: 100%;
+  margin: 0px;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  box-shadow: none;
+  line-height: 1rem;
+  -moz-appearance: none;
+  margin: 1rem;
   font-weight: bold;
   font-family: trade;
-  font-size: var(--ko-font-size-p);
+  font-size: 1rem;
   padding: 0.75rem;
   border: 0.0625rem solid transparent;
   width: auto;
   vertical-align: top;
-  line-height: var(--ko-font-size-p);
-  -moz-appearance: none;
-  position: relative;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 1rem;
-  display: inline-block;
-  margin-left: 0px;
 }
 
 .primary {
   composes: ko-button;
+  box-shadow: 0px 0.0625rem 0px 0px #E55B00;
   border-color: var(--ui-orange-color);
+  border-style: solid;
   background-color: #F60;
   background-image: linear-gradient(#F60, var(--ui-orange-color));
   color: #FFF;
+}
+
+.disabled {
+  color: #C2C2C2 !important;
+  opacity: 0.7 !important;
+  cursor: default !important;
+}
+
+.default {
+  composes: ko-button;
+  box-shadow: 0px 0.0625rem 0px 0px #DCDCDC;
+  border-radius: 0.125rem;
+  border-color: #E8E8E8;
+  border-style: solid;
+  background-color: #F5F5F5;
+  background-image: linear-gradient(#F5F5F5, #F0F0F0);
+  color: #232A31;
 }
